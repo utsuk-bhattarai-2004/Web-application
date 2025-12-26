@@ -21,9 +21,9 @@
 }
 
 .cell-text{
-    opacity: 0;/*text becomes transparent*/
+    opacity: 0;/*opacity is default function if 0 text becomes transparent*/
 }
-.cell1:hover{
+.cell1:hover{ /*hover is default function of css which recognizes the curosr movement*/
     background-color: black;
     color: white;
     cursor: pointer;
@@ -44,7 +44,7 @@
     cursor:cell;
 }
 .cell:hover .cell-text{
-opacity: 1;/*text becomes opaque*/
+opacity: 1;/*if 1 text becomes opaque*/
 }
 
 
@@ -59,3 +59,4 @@ opacity: 1;/*text becomes opaque*/
 
      }   
     }
+
