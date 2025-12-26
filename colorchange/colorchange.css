@@ -1,0 +1,61 @@
+.main{
+
+    display: grid;/*for browser to know that .main has grid*/
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;/*vh=viewportheight better than % as responses better to change in screen size*/
+    width: 100vw; /*vw=viewportwidht same reason*/
+   
+}
+
+
+.cell{
+    font-size: 20px;
+    padding: 20px;
+    display: flex; /*for easier allingment of its elements*/
+    background: white;
+    justify-content: center;/*horizontal allignment*/
+    align-items: center;/*vertical allignment*/
+    
+    
+}
+
+.cell-text{
+    opacity: 0;/*text becomes transparent*/
+}
+.cell1:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.cell2:hover{
+    background-color: red;
+    cursor: grab;
+    color: black;
+}
+.cell3:hover{
+    background-color: blue;
+    color: yellow;
+    cursor:zoom-in;
+}
+.cell4:hover{
+    background-color: green;
+    color: chartreuse;
+    cursor:cell;
+}
+.cell:hover .cell-text{
+opacity: 1;/*text becomes opaque*/
+}
+
+
+@media (max-width:600px){
+     .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);/*repeat is used for repeating the no of rows for a no of coloumn similar to using 1fr 1fr 1fr 1fr*/
+     }
+     .cell{
+        font-size: 10px;
+        padding: 10px;
+
+     }   
+    }
