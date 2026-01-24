@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.left, .right{
+        flex: 1;
+}
+
+.right{
+    background-color: lightgrey ;
+}
+.left{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.brand h3{
+
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom:40px;
+    color: blue;
+   text-transform: uppercase;
+    
+}
+
+.content h1{
+    font-size: 36px ;
+    font-weight: 800;
+    margin-bottom: 20px;
+    max-width: 420px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.content p{
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: grey;
+}
+.form-section form{
+
+    margin-top: 20px;
+
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.input-group label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: black;
+}
+.input-group input{
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.input-group input:focus{
+    border-color: blue;
+}
+
+form button
+{
+    padding: 14px;
+    font-size: 16px;
+    font-weight:600;
+    cursor: pointer;
+}
+form button:hover{
+    opacity: 0.9;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img{
+    max-width: 90%;
+    height: auto;
+}
+
+
+.social-login{
+    margin-top: auto;
+    text-align: center;
+}
+.social-login p {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 12px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons a{
+    margin-right: auto;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.right{
+    position: relative;
+}
+.nav{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+
+    
+.nav a{
+    font-size: 14px;
+    
+    font-weight: 600;
+    text-decoration: none;
+    color: darkblue;
+}
+
+@media (max-width:900px)
+{
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .left{
+        width: 100%;
+        padding: 30px 20px;
+
+    }
+    .content h1{
+            font-size: 28px;
+    }
+}
